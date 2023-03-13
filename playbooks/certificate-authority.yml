@@ -1,0 +1,12 @@
+
+- name: Create CA certificates
+  hosts: "localhost"
+  tags:
+    - always
+  tasks:
+    - name: "Create CA certificates"
+      include_role:
+        name: pki
+        tasks_from: main_ca.yml
+      vars:
+        pki_dir: "{{ openstack_pki_dir }}"
