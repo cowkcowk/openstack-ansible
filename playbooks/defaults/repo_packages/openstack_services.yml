@@ -1,0 +1,8 @@
+---
+
+### HEAD as of 02.03.2023 ###
+
+## Global Requirements
+requirements_git_repo: "{{ openstack_opendev_base_url }}/openstack/requirements"
+requirements_git_install_branch: 4eb31299dcd912d55ec659319237bb4389ba12f1
+requirements_git_track_branch: master
